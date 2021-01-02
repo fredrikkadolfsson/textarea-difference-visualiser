@@ -24,6 +24,21 @@
   ],
   "scripts": {
     "build": "tsc",
+    "lint:eslint": "yarn lint:eslint:check --fix",
+    "lint:eslint:check": "eslint '**/*.{js,ts,tsx}'",
+    "lint:prettier": "yarn lint:prettier:base --write",
+    "lint:prettier:base": "prettier '**/*.!(js|ts|tsx)' --ignore-unknown",
+    "lint:prettier:check": "yarn lint:prettier:base --check",
     "prepare": "yarn build"
+  },
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "4.11.1",
+    "@typescript-eslint/parser": "4.11.1",
+    "eslint": "7.17.0",
+    "eslint-config-prettier": "7.1.0",
+    "eslint-plugin-prettier": "3.3.0",
+    "eslint-plugin-unicorn": "25.0.1",
+    "prettier": "2.2.1",
+    "typescript": "4.1.3"
   }
 }
