@@ -1,6 +1,6 @@
 {
   "name": "textarea-difference-visualiser",
-  "version": "0.0.0-development",
+  "version": "0.0.1-development",
   "description": "Visualise differences between two strings in a textarea.",
   "keywords": [
     "compare",
