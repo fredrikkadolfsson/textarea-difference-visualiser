@@ -16,5 +16,14 @@
   },
   "repository": "fredrikkadolfsson/textarea-difference-visualiser",
   "license": "MIT",
-  "author": "Fredrik Adolfsson (https://github.com/fredrikkadolfsson)"
+  "author": "Fredrik Adolfsson (https://github.com/fredrikkadolfsson)",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build"
+  }
 }
