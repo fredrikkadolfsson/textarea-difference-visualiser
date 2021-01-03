@@ -26,6 +26,7 @@
     "build": "tsc",
     "build:storybook": "build-storybook",
     "dev": "start-storybook -p 6006",
+    "lint": "yarn lint:eslint && yarn lint:prettier",
     "lint:eslint": "yarn lint:eslint:check --fix",
     "lint:eslint:check": "eslint '**/*.{js,ts,tsx}'",
     "lint:prettier": "yarn lint:prettier:base --write",
