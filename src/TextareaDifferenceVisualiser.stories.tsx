@@ -11,7 +11,26 @@ export default {
 
 const Template: Story<TextareaDifferenceVisualiserAttributes> = (
   properties,
-) => <TextareaDifferenceVisualiser {...properties} />;
+) => (
+  <div
+    style={{ padding: "25px", boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px" }}
+  >
+    <TextareaDifferenceVisualiser
+      rows={10}
+      style={{ width: "500px" }}
+      {...properties}
+    />
+  </div>
+);
 
-export const Empty = Template.bind({});
-Empty.args = {};
+export const Empty = Template;
+Empty.args = {
+  defaultValue: `<head>
+  <title>A Meaningful Page Title<script /></title>
+  <p>
+</head>`,
+  targetValue: `<head>
+  <title>A Meaningful Page Title</title>
+  <p></p>
+</head>`,
+};
